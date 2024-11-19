@@ -1,7 +1,7 @@
+accountCity = "karachi";
 const accountId = 123445;
 let accountEmail = "hassanali004@gmail.com";
 var accountPassword = "hassan0312.";
-accountCity = "karachi";
 let accountState;
 
 
