@@ -32,6 +32,8 @@ valueInNumber = Number(score);
 // console.log(valueInNumber)
 // 0
 
+// ----------------------------------------------------------------------------
+
 let str = "hassan ali";
 let valueInString = String(str)
 // console.log(typeof valueInString);
@@ -46,8 +48,8 @@ valueInString = String(str);
 
 str = null;
 valueInString = String(str);
-// console.log(typeof valueInString)
-// console.log(valueInString)
+console.log(typeof valueInString)
+console.log(valueInString)
 // null but string
 
 str = false;
@@ -62,6 +64,8 @@ valueInString = String(str);
 // console.log( valueInString)
 // undefined but string
 
+
+// ------------------------------------------------------------------------------
 let isLoggedIn = true;
 let valueInBoolean = Boolean(isLoggedIn);
 // console.log(typeof valueInBoolean);
