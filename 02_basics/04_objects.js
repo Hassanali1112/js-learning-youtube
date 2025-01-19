@@ -21,5 +21,18 @@ const obj4 = { ...obj1, ...obj2, ...obj3 };
 // console.log(Object.values(obj4));
 // console.log(Object.entries(obj4));
 
-console.log(tinderUser.hasOwnProperty("age"));
-console.log(tinderUser.hasOwnProperty("email"));
+// console.log(tinderUser.hasOwnProperty("age"));
+// console.log(tinderUser.hasOwnProperty("email"));
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+const course = {
+  courseName : "js urdu",
+  courseInstructor :  "Hitesh Choudary",
+  coursePrice : 999
+}
+
+const {courseInstructor : instructor, ...other} = course;
+console.log(other)
+
+console.log(instructor)
