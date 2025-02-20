@@ -47,3 +47,46 @@ const loginUserNamePass = loginUserNameMessage("john doe")
 
 console.log(loginUserNamePass)
 
+// Rest operator (...)
+
+// function with multiple argument without rest operator
+
+// function calculateCartPrice(num){
+//   return num
+// }
+
+// console.log(calculateCartPrice(200,400,60))    // result 200 only
+
+// function calculateCartPrice(...num){
+//   return num
+// }
+
+// console.log(calculateCartPrice(200,400,60)) //result an array
+
+
+// ++++++++++++++++++++++++++++++ special scenerio for interview +++++++++++++++++++++++++++++++
+
+function calculateCartPrice(val, val1, ...num){
+  return num
+}
+
+console.log(calculateCartPrice(200,400,600, 800, 1000))
+
+
+// function for object
+
+
+function handleObject (anObject){
+  return  `The name of user is ${anObject.name} and his profession is ${anObject.profession}`
+}
+
+console.log(handleObject({name : "Hassan Ali", profession : "software engineer"}))
+
+// function for object
+
+
+function handleArray (anArray){
+  return  anArray[2]
+}
+
+console.log(handleArray([1,4,5,8]))
