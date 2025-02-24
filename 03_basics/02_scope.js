@@ -54,7 +54,7 @@ function addOne (num){
 
 // function Expression
 
-// console.log(addTwo(5))
+console.log(addTwo(5))
 const addTwo = function(num){
   return num + 2;
 }
