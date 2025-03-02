@@ -19,12 +19,12 @@ for(let i =2; i <= 10;  i++) {
     }
 }
 
-const arr = ["Taimoor","Hassan Ali","Abdul Rehman","Zeeshan","Faizan"]
+const arr = ["Taimoor", "Abdul Rehman", "Zeeshan", "Faizan", "Hassan Ali"];
 
 for(let i = 0; i < arr.length; i++){
   if(arr[i]=== "Hassan Ali"){
     console.log(`welcome ${arr[i]}`)
     continue
   }
-  console.log(`brothers ${arr[i]}`)
+  console.log(`${i+1} brother ${arr[i]}`)
 }
