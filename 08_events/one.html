@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browser Events</title>
+</head>
+
+<body>
+  <ul class="images" style="display: flex; flex-direction: column; align-items: flex-start; gap: 1rem;">
+    <li style="padding: 2rem; border: 2px solid black;" ><img
+        src="https://images.unsplash.com/photo-1616702450889-8a63c1a34e98?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHBleGVsc3xlbnwwfHwwfHx8MA%3D%3D"
+        alt="boy" width='350' height="200" id="boy"></li>
+    <li style="padding: 2rem; border: 2px solid black;" ><img
+        src="https://images.unsplash.com/photo-1617140383214-23f27d9812a4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHBleGVsc3xlbnwwfHwwfHx8MA%3D%3D"
+        alt="girl" width='350' height="200" id="girl"
+         
+         ></li>
+    <li style="padding: 2rem; border: 2px solid black;" ><img
+        src="https://images.unsplash.com/photo-1605712202150-a0b0a29d204c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHBleGVsc3xlbnwwfHwwfHx8MA%3D%3D"
+        alt="nature" width='350' height="200" id="nature" ></li>
+        <li><a href="https://www.google.com/" id="google">google</a></li>
+  </ul>
+</body>
+<script>
+  const images = document.querySelector(".images")
+  images.addEventListener("click",(e)=>{
+    if(e.target.tagName === "IMG"){
+      e.target.parentNode.parentNode.removeChild(e.target.parentNode)
+    }
+    console.log(e.target.tagName)
+    // e.target.parentNode.remove()
+    console.log("parent event")
+  },false)
+
+
+  // const girl = document.querySelector("#girl")
+  // console.log(girl)
+  // girl.addEventListener("click",(e)=>{
+  //   e.stopPropagation()
+  //   // e.target.parentElement.remove()
+  //   // let itemToDelete = e.target.parentElement;
+  //   // itemToDelete.parentElement.removeChild(itemToDelete)
+  // },false)
+
+  // const google = document.querySelector("#google").addEventListener("click",(e)=>{
+  //   e.preventDefault()
+  //   console.log("default behaviour changed")
+  // })
+</script>
+
+</html>
