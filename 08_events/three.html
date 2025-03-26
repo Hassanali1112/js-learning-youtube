@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h3 id="heading">Learning JS</h3>
+  <button id="Start">Click to start</button>
+  <button id="Stop">Click to stop</button>
+</body>
+<script>
+  const printDateWithName = () => {
+    console.log("Hassan ali", new Date().toLocaleTimeString())
+  }
+
+  let nameWithTime;
+  document.querySelector("#Start").addEventListener("click",()=>{
+    nameWithTime = setInterval(printDateWithName, 1000);
+  })
+
+  document.querySelector("#Stop").addEventListener("click",()=>{
+     clearInterval(nameWithTime)
+  })
+
+</script>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>setTimeout & clearTimeout</title>
+</head>
+<body>
+    <h2 id="heading">Chai aur code</h2>
+    <button id="change">Click me</button>
+</body>
+<script>
+  const changeText = setTimeout(()=>{
+  document.querySelector("#heading").innerHTML = "Learning JS with Hitesh is easy and fun!"
+  
+  },2000)
+
+  document.querySelector("#change").addEventListener("click",()=>{
+    clearTimeout(changeText)
+    console.log("STOPPED")
+  })
+
+
+</script>
+</html>
