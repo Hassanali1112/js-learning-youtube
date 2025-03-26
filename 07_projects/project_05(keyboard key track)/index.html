@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>track key</title>
+</head>
+<style>
+  body{
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+</style>
+<body id="body">
+  
+</body>
+
+<script>
+ const body = document.querySelector("body");
+ body.style.backgroundColor = 'black';
+ body.style.color = 'white';
+ body.addEventListener("keydown",(e)=>{
+    body.innerHTML = `
+    <table style="border : 1px solid white">
+  <tr style="border : 1px solid white">
+    <th>key</th>
+    <th>keycode</th>
+    <th>code</th>
+  </tr>
+  <tr style="border : 1px solid white">
+    <td>${e.key}</td>
+    <td>${e.keyCode}</td>
+    <td>${e.code}</td>
+  </tr>
+</table>
+    `
+  },false)
+
+</script>
+</html>
