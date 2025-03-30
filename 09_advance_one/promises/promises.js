@@ -73,3 +73,34 @@ const promiseFive = new Promise((resolve, reject) => {
 promiseFive
   .then((res) => console.log(res))
   .catch((error) => console.log(error));
+
+  // fetch api
+
+  // with async await 
+
+//   async function getAllData (){
+//     try {
+//       const response = await fetch("https://dummyjson.com/users");
+//       const data = await response.json();
+//       if(data) console.log(data)
+//         // if(error) throw error;
+//     } catch (error) {
+//       console.log(error)
+//     }
+//   }
+
+//  ( ()=>{
+//   getAllData();
+//  } )()
+
+
+// with fetch
+
+function callData (){
+   fetch("https://dummyjson.com/users")
+     .then((response) => response.json())
+     .then((data) => console.log(data.users))
+     .catch((error) => console.log(error));
+}
+
+(()=>{ callData()})()
